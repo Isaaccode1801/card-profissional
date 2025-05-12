@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #0D47A1, #000000);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Título principal */
+  .titulo {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00FFFF;
+  }
+  
+
+  .card {
+    background-color: #0D1B2A;
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9);
+  }
+  
+
+  .imagem-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00FFFF;
+    margin-bottom: 20px;
+  }
+  
+
+  .nome {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+  }
+  
+
+  .texto {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #textolink {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+
+  .redes {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    animation: pulsar 5s infinite;
+  }
+  
+  .redes:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  
+  /* Cores específicas para cada botão */
+  .instagram {
+    background-color: #E1306C;
+  }
+  
+  .instagram:hover {
+    background-color: #c1275b;
+  }
+  
+  .youtube {
+    background-color: #FF0000;
+  }
+  
+  .youtube:hover {
+    background-color: #cc0000;
+  }
+  
+  
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px #00FFFF;
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00FFFF;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 5px #00FFFF;
+    }
+  }
